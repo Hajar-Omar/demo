@@ -1,3 +1,5 @@
+import { IArticleRes } from './../news';
+import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
@@ -9,7 +11,7 @@ import { Observable } from 'rxjs';
 export class NewsService {
 
   constructor(private _HttpClient: HttpClient) { }
-  getNews(): Observable<any> {
-    return this._HttpClient.get('https://newsapi.org/v2/top-headlines?country=eg&apiKey=2a8f1cd976ef43078b665c68ca3b650a');
+  getNews(country: string): Observable<IArticleRes> {
+    return this._HttpClient.get<IArticleRes>(`${environment.baseUrlNewsApi}?country=${country}&apiKey=${environment.newsId}`);
   }
 }
