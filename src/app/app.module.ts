@@ -5,14 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-<<<<<<< Updated upstream
-import {FormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
-=======
-import { FormsModule } from "@angular/forms";
-import { HttpClientModule } from '@angular/common/http';
->>>>>>> Stashed changes
 
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -25,10 +20,6 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     AppRoutingModule,
     HttpClientModule
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
   ],
   providers: [],
   bootstrap: [AppComponent]
