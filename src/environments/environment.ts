@@ -3,8 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+<<<<<<< Updated upstream
   production: false,
   appId: '62f3624c4b74e8a9819bda5d',
   basrUrlDummy: 'https://dummyapi.io/data/v1/'
+=======
+  production: false
+  
+>>>>>>> Stashed changes
 };
 

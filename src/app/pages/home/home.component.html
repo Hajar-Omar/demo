@@ -1,0 +1,8 @@
+<div class="row">
+    <div *ngFor="let item of news" class="col-md-4">
+        <div class="item">
+            <img class="w-100" [src]="item.urlToImage" alt="">
+            <h2>{{item.author}}</h2>
+        </div>
+    </div>
+</div>

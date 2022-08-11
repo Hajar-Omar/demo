@@ -21,3 +21,19 @@ postsArr : IPosts[] = []
     })
   }
 }
+/*
+news: Array<any> = [];
+  constructor(private _HttpClient: HttpClient, private _NewsService: NewsService) { }
+
+
+  ngOnInit(): void {
+
+    this._NewsService.getNews().subscribe(res => {
+      this.news = res.articles;
+      console.log(this.news);
+    }
+    );
+
+  }
+
+*/
