@@ -1,0 +1,17 @@
+<ul>
+    <li *ngFor="let item of arrCountries"> <a 
+        
+        [ngClass]="{'active': item.id==selectedCountry}" 
+        
+        (click)="changeCountry(item.id)">{{item.name}}</a> </li>
+</ul>
+
+<div class="row">
+
+    <div *ngFor="let item of news" class="col-md-4">
+        <div class="item">
+            <img class="w-100" [src]="item.urlToImage" alt="">
+            <h2 [innerHTML]="item.author"></h2>
+        </div>
+    </div>
+</div>
