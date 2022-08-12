@@ -11,11 +11,12 @@ const routes: Routes = [
   { path: 'error', loadChildren: () => NotfoundModule },
   { path: 'home', loadChildren: () => HomeModule },
   { path: 'news', redirectTo: 'home' },
-  
+  {path: '**', redirectTo: 'error'}
+
   // {path: '**', redirectTo: 'error'}
   // {path: 'posts', component:PostsComponent},
   // {path: 'error', component:NotfoundComponent},
-  // {path: '**', redirectTo: 'error'}
+  //
 ];
 
 @NgModule({
