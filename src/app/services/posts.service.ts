@@ -21,6 +21,6 @@ import { IPostsRes} from "../models/posts";
       let headers = new HttpHeaders({
         'app-id': id
       })
-      return this._httpClient.get<IPostsRes>(environment.basrUrlDummy + 'post', {headers});
+      return this._httpClient.get<IPostsRes>(environment.baserUrlDummy + 'post', {headers});
     }
   }
