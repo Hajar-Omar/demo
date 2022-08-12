@@ -1,0 +1,8 @@
+<div class="row d-flex align-items-center">
+  <div
+    *ngFor="let post of postsArrData"
+    class="col-12 col-md-6 col-xl-4 g-5 d-flex justify-content-center"
+  >
+    <app-post-card [postObj]="post"></app-post-card>
+  </div>
+</div>
