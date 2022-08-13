@@ -35,6 +35,18 @@
           >
         </li>
       </ul>
+      <ul class="navbar-nav ms-auto">
+        <li *ngIf="!isLogin" class="nav-item d-flex align-items-center">
+          <button (click) = "login()" class="btn btn-outline-success border-0">
+            <i class="bi bi-door-open"></i>
+          </button>
+        </li>
+        <li *ngIf="isLogin" class="nav-item d-flex align-items-center">
+          <button (click)="logout()" class="btn btn-outline-danger border-0">
+            <i class="bi bi-door-closed text-end"></i>
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
